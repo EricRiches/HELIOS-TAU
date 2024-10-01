@@ -1,0 +1,42 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Random_On : MonoBehaviour
+{
+    [SerializeField] List<Generator> generators;
+
+    int genOn;
+
+    // Looks at the length of the generators list and determines how many will need to be turned off
+    void Start()
+    {
+        if (generators != null)
+        {
+            genOn = generators.Count / 2;
+
+            PickGen(genOn);
+        }
+    }
+
+    // Chooses generators to turn off
+    void PickGen(int num)
+    {
+        int pick = generators.Count;
+        int index;
+        Generator tempGen;
+
+        for (int i = 0; i < num; i++)
+        {
+            index = Random.Range(0, pick);
+
+            generators[index].TurnOnOff();
+
+            tempGen = generators[pick - 1];
+            generators[pick - 1] = generators[index];
+            generators[index] = tempGen;
+
+            pick--;
+        }
+    }
+}
