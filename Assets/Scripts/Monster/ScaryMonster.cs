@@ -6,8 +6,10 @@ using UnityEngine.SceneManagement;
 
 public class ScaryMonster : MonoBehaviour
 {
-    [SerializeField] MonsterState currentState;
+    public bool AreAllGeneratorsOn = false;
+    public MonsterState currentState;
     [SerializeField] Transform PlayerRefrence;
+    [SerializeField] GameObject MonsterAISounds;
 
     [Header("Change Behvaior")]
     [SerializeField] Vector2 TimeSpentInBehavior;
@@ -41,23 +43,34 @@ public class ScaryMonster : MonoBehaviour
     {
         VentSoundBox.SetActive(currentState == MonsterState.Vent);
 
-        if (currentState == MonsterState.Vent)
+        if (!AreAllGeneratorsOn)
         {
-            Vent_Update();
+            if (currentState == MonsterState.Vent)
+            {
+                Vent_Update();
+                MonsterAISounds.SetActive(false);
+            }
+            else if (currentState == MonsterState.PeekABoo)
+            {
+                PeekABoo_Update();
+                MonsterAISounds.SetActive(true);
+            }
+            else if (currentState == MonsterState.SilentSneak)
+            {
+                SilentSneak_Update();
+                MonsterAISounds.SetActive(false);
+            }
+
+            BehaviorTime -= Time.deltaTime;
+            if (BehaviorTime <= 0)
+            {
+                ChangeBehavior();
+            }
         }
-        else if (currentState == MonsterState.PeekABoo)
-        {
-            PeekABoo_Update();
-        }
-        else if (currentState == MonsterState.SilentSneak)
+        else
         {
             SilentSneak_Update();
-        }
-
-        BehaviorTime -= Time.deltaTime;
-        if (BehaviorTime <= 0) 
-        {
-            ChangeBehavior();
+            MonsterAISounds.SetActive(true);
         }
     }
 
@@ -166,6 +179,12 @@ public class ScaryMonster : MonoBehaviour
     }
 
     #endregion
+
+    public void ActivateHunt()
+    {
+        SilentSneak_Start();
+        AreAllGeneratorsOn = true;
+    }
 
     void PlayerKilled()
     {

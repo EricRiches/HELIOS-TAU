@@ -11363,6 +11363,37 @@ Transform:
   m_Father: {fileID: 1675497240}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &225665942
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 225665943}
+  m_Layer: 6
+  m_Name: Monster Ai Sounds
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &225665943
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 225665942}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: -2.48, z: 100.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1125974743}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &226039753
 GameObject:
   m_ObjectHideFlags: 0
@@ -42942,8 +42973,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60b1336d4d8f2bf40ad881fff77ffc61, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  AreAllGeneratorsOn: 0
   currentState: 0
   PlayerRefrence: {fileID: 1936587841}
+  MonsterAISounds: {fileID: 0}
   TimeSpentInBehavior: {x: 60, y: 120}
   BehaviorTime: 0
   InitialisedVents:
@@ -47343,6 +47376,7 @@ Transform:
   m_Children:
   - {fileID: 954803972}
   - {fileID: 1009762957}
+  - {fileID: 225665943}
   m_Father: {fileID: 981666608}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
