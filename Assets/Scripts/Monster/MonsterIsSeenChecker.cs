@@ -68,11 +68,11 @@ public class MonsterIsSeenChecker : MonoBehaviour
                 if (hit.transform != Monster)
                 {
                     isInCamera = false;
-                    CanFlashMonster = true;
+                    CanFlashMonster = false;
                 }
                 else
                 {
-                    CanFlashMonster = false;
+                    CanFlashMonster = true;
                 }
             }
             else
