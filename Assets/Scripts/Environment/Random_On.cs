@@ -19,6 +19,23 @@ public class Random_On : MonoBehaviour
         }
     }
 
+    private void Update()
+    {
+        int genCount = 0;
+
+        for (int i = 0; i < generators.Count; i++)
+        {
+            if (generators[i] != null && generators[i].GetIsOn())
+            {
+                genCount++;
+            }
+            if (genCount == generators.Count)
+            {
+                FindObjectOfType<ScaryMonster>().ActivateHunt();
+            }
+        }
+    }
+
     // Chooses generators to turn off
     void PickGen(int num)
     {

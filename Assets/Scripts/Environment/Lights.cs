@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Lights : MonoBehaviour
 {
-    [SerializeField] Light lightSource;
+    Light lightSource;
 
     float maxInterval = 0.2f;
     float maxFlicker = 0.2f;
@@ -18,6 +18,8 @@ public class Lights : MonoBehaviour
     // Sets the default light intensity to the current intensity
     private void Start()
     {
+        lightSource = GetComponent<Light>();
+
         defaultIntensity = lightSource.intensity;
     }
 
