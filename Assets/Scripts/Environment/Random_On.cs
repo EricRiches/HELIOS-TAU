@@ -7,6 +7,7 @@ public class Random_On : MonoBehaviour
     [SerializeField] List<Generator> generators;
 
     int genOn;
+    bool activated = false;
 
     // Looks at the length of the generators list and determines how many will need to be turned off
     void Start()
@@ -29,8 +30,10 @@ public class Random_On : MonoBehaviour
             {
                 genCount++;
             }
-            if (genCount == generators.Count)
+            if (genCount == generators.Count && !activated)
             {
+                activated = true;
+
                 FindObjectOfType<ScaryMonster>().ActivateHunt();
             }
         }
