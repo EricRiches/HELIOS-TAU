@@ -10,6 +10,7 @@ public class ScaryMonster : MonoBehaviour
     public MonsterState currentState;
     [SerializeField] Transform PlayerRefrence;
     [SerializeField] GameObject MonsterAISounds;
+    [SerializeField] AudioSource MonsterVoiceSource;
 
     [Header("Change Behvaior")]
     [SerializeField] Vector2 TimeSpentInBehavior;
@@ -29,6 +30,8 @@ public class ScaryMonster : MonoBehaviour
     [Header("Peek A Boo")]
     [SerializeField] float PeekABoo_Speed;
     public bool isSeen = false;
+    [SerializeField] AudioClip WalkingSound;
+    [SerializeField] AudioClip StandingSound;
 
     [Header("Silent Sneak")]
     [SerializeField] float SilentSneak_Speed;
@@ -71,6 +74,7 @@ public class ScaryMonster : MonoBehaviour
         {
             SilentSneak_Update();
             MonsterAISounds.SetActive(true);
+            MonsterVoiceSource.clip = WalkingSound;
         }
     }
 
@@ -148,11 +152,13 @@ public class ScaryMonster : MonoBehaviour
         {
             monsterAI.speed = 0;
             monsterAI.SetDestination(monsterAI.transform.position);
+            MonsterVoiceSource.clip = StandingSound;
         }
         else
         {
             monsterAI.speed = PeekABoo_Speed;
             monsterAI.SetDestination(PlayerRefrence.position);
+            MonsterVoiceSource.clip = WalkingSound;
 
             if (Vector3.Distance(monsterAI.transform.position, PlayerRefrence.position) <= KillDistance)
             {
