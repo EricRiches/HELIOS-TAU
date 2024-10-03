@@ -17,6 +17,7 @@ public class ScaryMonster : MonoBehaviour
     [SerializeField] Vent[] InitialisedVents;
     [SerializeField] int CurrentVent;
     public float AttackRange;
+    [SerializeField] GameObject VentSoundBox;
 
     [Header("AI")]
     public NavMeshAgent monsterAI;
@@ -38,6 +39,8 @@ public class ScaryMonster : MonoBehaviour
 
     private void Update()
     {
+        VentSoundBox.SetActive(currentState == MonsterState.Vent);
+
         if (currentState == MonsterState.Vent)
         {
             Vent_Update();
@@ -102,6 +105,7 @@ public class ScaryMonster : MonoBehaviour
         currentState = MonsterState.Vent;
         CurrentVent = Random.Range(0, InitialisedVents.Length);
         monsterAI.gameObject.SetActive(false);
+        VentSoundBox.transform.position = InitialisedVents[CurrentVent].SoundOriginPoint.position;
     }
 
     void Vent_Update()
