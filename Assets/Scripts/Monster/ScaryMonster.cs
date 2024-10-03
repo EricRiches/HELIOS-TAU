@@ -105,8 +105,11 @@ public class ScaryMonster : MonoBehaviour
 
     public void MonsterFlashed()
     {
-        Vent_Start();
-        ChooseRandomChangeBehaviorTime();
+        if (!AreAllGeneratorsOn)
+        {
+            Vent_Start();
+            ChooseRandomChangeBehaviorTime();
+        }
     }
 
     #endregion
