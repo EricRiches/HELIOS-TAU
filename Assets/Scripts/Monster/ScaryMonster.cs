@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.SceneManagement;
 
 public class ScaryMonster : MonoBehaviour
 {
@@ -86,6 +87,12 @@ public class ScaryMonster : MonoBehaviour
         BehaviorTime = Random.Range(TimeSpentInBehavior.x, TimeSpentInBehavior.y);
     }
 
+    public void MonsterFlashed()
+    {
+        Vent_Start();
+        ChooseRandomChangeBehaviorTime();
+    }
+
     #endregion
 
     #region Vent
@@ -158,7 +165,7 @@ public class ScaryMonster : MonoBehaviour
 
     void PlayerKilled()
     {
-        Debug.Log("Player Killed");
+        SceneManager.LoadScene(1);
     }
 
     private void OnDrawGizmosSelected()
