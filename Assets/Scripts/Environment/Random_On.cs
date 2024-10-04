@@ -34,6 +34,7 @@ public class Random_On : MonoBehaviour
             if (genCount == generators.Count)
             {
                 SceneManager.LoadScene(1);
+                Cursor.lockState = CursorLockMode.None;
             }
         }
     }

@@ -198,6 +198,7 @@ public class ScaryMonster : MonoBehaviour
     void PlayerKilled()
     {
         SceneManager.LoadScene(1);
+        Cursor.lockState = CursorLockMode.None;
     }
 
     private void OnDrawGizmosSelected()
