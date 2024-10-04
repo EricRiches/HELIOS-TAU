@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Random_On : MonoBehaviour
 {
@@ -14,7 +15,7 @@ public class Random_On : MonoBehaviour
     {
         if (generators != null)
         {
-            genOn = generators.Count / 2;
+            genOn = generators.Count;
 
             PickGen(genOn);
         }
@@ -30,11 +31,9 @@ public class Random_On : MonoBehaviour
             {
                 genCount++;
             }
-            if (genCount == generators.Count && !activated)
+            if (genCount == generators.Count)
             {
-                activated = true;
-
-                FindObjectOfType<ScaryMonster>().ActivateHunt();
+                SceneManager.LoadScene(1);
             }
         }
     }

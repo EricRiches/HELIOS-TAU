@@ -8,6 +8,7 @@ public class Generator : MonoBehaviour
     private bool isOnCheck = true;
     public Transform MonsterStandPlace;
     AudioSource sound;
+    public Animator GeneratorAnimator;
 
     private void Start()
     {

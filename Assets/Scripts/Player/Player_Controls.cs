@@ -9,7 +9,7 @@ public class Player_Controls : MonoBehaviour
     [SerializeField] float gravity;
     [SerializeField] Transform GroundCheck;
     [SerializeField] LayerMask GroundMask;
-    [SerializeField] Canvas canvas;
+    [SerializeField] GameObject canvas;
 
     CharacterController controller;
     Generator gen;
@@ -72,8 +72,9 @@ public class Player_Controls : MonoBehaviour
     // Adds a Pop-Up telling the player to press a button to turn on the generator
     void AddRepairUI()
     {
+        Debug.Log("Is In Repair Area");
         isUIOn = true;
-        canvas.enabled = true;
+        canvas.SetActive(true);
     }
 
 
@@ -81,7 +82,7 @@ public class Player_Controls : MonoBehaviour
     void RemoveRepairUI()
     {
         isUIOn = false;
-        canvas.enabled = false;
+        canvas.SetActive(false);
     }
 
     void RepairGenerator()
@@ -111,7 +112,7 @@ public class Player_Controls : MonoBehaviour
     float YVelocity = 0;
     void GravityUpdate()
     {
-        isGrounded = Physics.CheckSphere(transform.position, 0.1f, GroundMask);
+        isGrounded = Physics.CheckSphere(GroundCheck.position, 0.1f, GroundMask);
 
         if (!isGrounded)
         {
@@ -126,4 +127,10 @@ public class Player_Controls : MonoBehaviour
     }
 
     #endregion
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.green;
+        Gizmos.DrawSphere(GroundCheck.position, 0.1f);
+    }
 }
