@@ -7,6 +7,12 @@ public class Generator : MonoBehaviour
     public bool isOn = true;
     private bool isOnCheck = true;
     public Transform MonsterStandPlace;
+    AudioSource sound;
+
+    private void Start()
+    {
+        sound = GetComponent<AudioSource>();
+    }
 
     private void Update()
     {
@@ -33,6 +39,11 @@ public class Generator : MonoBehaviour
 
         isOn = !isOn;
         isOnCheck = isOn;
+
+        if (isOn)
+        {
+            sound.Play();
+        }
     }
 
     public bool GetIsOn()

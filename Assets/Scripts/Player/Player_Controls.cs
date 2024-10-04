@@ -9,6 +9,7 @@ public class Player_Controls : MonoBehaviour
     [SerializeField] float gravity;
     [SerializeField] Transform GroundCheck;
     [SerializeField] LayerMask GroundMask;
+    [SerializeField] Canvas canvas;
 
     CharacterController controller;
     Generator gen;
@@ -72,6 +73,7 @@ public class Player_Controls : MonoBehaviour
     void AddRepairUI()
     {
         isUIOn = true;
+        canvas.enabled = true;
     }
 
 
@@ -79,6 +81,7 @@ public class Player_Controls : MonoBehaviour
     void RemoveRepairUI()
     {
         isUIOn = false;
+        canvas.enabled = false;
     }
 
     void RepairGenerator()
