@@ -5,6 +5,7 @@ using UnityEngine;
 public class Footsteps : MonoBehaviour
 {
     public GameObject footstep;
+    public FMODUnity.StudioEventEmitter emitter;
     
     // Start is called before the first frame update
     void Start()
@@ -65,10 +66,10 @@ public class Footsteps : MonoBehaviour
 
     void footsteps()
     {
-        footstep.SetActive(true);
+        emitter.Play();
     }
     void StopFootsteps()
     {
-        footstep.SetActive(false);
+        emitter.Stop();
     }
 }

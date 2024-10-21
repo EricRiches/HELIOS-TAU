@@ -9,6 +9,7 @@ public class Generator : MonoBehaviour
     public Transform MonsterStandPlace;
     AudioSource sound;
     public Animator GeneratorAnimator;
+    public FMODUnity.StudioEventEmitter emitter;
 
     private void Start()
     {
@@ -43,7 +44,7 @@ public class Generator : MonoBehaviour
 
         if (isOn)
         {
-            sound.Play();
+            emitter.Play();
         }
     }
 

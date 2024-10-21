@@ -1,0 +1,254 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-7653135873849614031
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/GeneratorPowerUp
+  m_EditorClassIdentifier: 
+  Path: event:/GeneratorPowerUp
+  Guid:
+    Data1: 43008468
+    Data2: 1089151056
+    Data3: 1753206158
+    Data4: 355599896
+  Banks:
+  - {fileID: 1745233689509470321}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1900
+--- !u!114 &-5863036973587435432
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ambience1
+  m_EditorClassIdentifier: 
+  Path: event:/Ambience1
+  Guid:
+    Data1: -854644041
+    Data2: 1077232194
+    Data3: -1963182932
+    Data4: 823346786
+  Banks:
+  - {fileID: 1745233689509470321}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 12000
+--- !u!114 &-1678735219277660303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/FootSteps
+  m_EditorClassIdentifier: 
+  Path: event:/FootSteps
+  Guid:
+    Data1: -1454627212
+    Data2: 1269941506
+    Data3: 1550280856
+    Data4: 168496716
+  Banks:
+  - {fileID: 1745233689509470321}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 820
+--- !u!114 &-714457150447286420
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: C:/Users/Eric/OneDrive/Documents/FMOD Studio/Helios-Tau/Build/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 638649655726060332
+  FileSizes:
+  - Name: Desktop
+    Value: 1036
+  Exists: 1
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
+  m_Name: FMODStudioCache
+  m_EditorClassIdentifier: 
+  EditorBanks:
+  - {fileID: 6855534323521411662}
+  - {fileID: -714457150447286420}
+  - {fileID: 1745233689509470321}
+  EditorEvents:
+  - {fileID: 39175668668415013}
+  - {fileID: -1678735219277660303}
+  - {fileID: -5863036973587435432}
+  - {fileID: -7653135873849614031}
+  - {fileID: 5001097969651544103}
+  - {fileID: 2409009068930650462}
+  EditorParameters: []
+  MasterBanks:
+  - {fileID: -714457150447286420}
+  StringsBanks:
+  - {fileID: 6855534323521411662}
+  cacheTime: 638649655727498404
+  cacheVersion: 131620
+--- !u!114 &39175668668415013
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/VentNoise
+  m_EditorClassIdentifier: 
+  Path: event:/VentNoise
+  Guid:
+    Data1: -369985982
+    Data2: 1249549715
+    Data3: -358571330
+    Data4: -227182009
+  Banks:
+  - {fileID: 1745233689509470321}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 7500
+--- !u!114 &1745233689509470321
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/UnityScene.bank
+  m_EditorClassIdentifier: 
+  Path: C:/Users/Eric/OneDrive/Documents/FMOD Studio/Helios-Tau/Build/Desktop/UnityScene.bank
+  Name: UnityScene
+  StudioPath: bank:/UnityScene
+  lastModified: 638649655727498404
+  FileSizes:
+  - Name: Desktop
+    Value: 769728
+  Exists: 1
+--- !u!114 &2409009068930650462
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/HeartBeat
+  m_EditorClassIdentifier: 
+  Path: event:/HeartBeat
+  Guid:
+    Data1: 1950397243
+    Data2: 1340695856
+    Data3: -108168269
+    Data4: 2043356419
+  Banks:
+  - {fileID: 1745233689509470321}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 22000
+--- !u!114 &5001097969651544103
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/EngineRoom
+  m_EditorClassIdentifier: 
+  Path: event:/EngineRoom
+  Guid:
+    Data1: 1699097596
+    Data2: 1316005507
+    Data3: -45395285
+    Data4: 1755123542
+  Banks:
+  - {fileID: 1745233689509470321}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0.1
+  MaxDistance: 150
+  Length: 13000
+--- !u!114 &6855534323521411662
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: C:/Users/Eric/OneDrive/Documents/FMOD Studio/Helios-Tau/Build/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 638649655726126720
+  FileSizes:
+  - Name: Desktop
+    Value: 1084
+  Exists: 1
