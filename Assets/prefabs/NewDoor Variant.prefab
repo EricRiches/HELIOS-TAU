@@ -127,6 +127,14 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: a04983cee43397a41857f56802383d33,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 484480422930702508}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: a04983cee43397a41857f56802383d33,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 973778155086546554}
     - targetCorrespondingSourceObject: {fileID: 7953606483559150473, guid: a04983cee43397a41857f56802383d33,
         type: 3}
       insertIndex: -1
@@ -144,6 +152,45 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 516167203789816333}
   m_SourcePrefab: {fileID: 100100000, guid: a04983cee43397a41857f56802383d33, type: 3}
+--- !u!1 &1104261034513556226 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: a04983cee43397a41857f56802383d33,
+    type: 3}
+  m_PrefabInstance: {fileID: 257398277118451283}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &484480422930702508
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1104261034513556226}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 11, y: 5.51, z: 4.22}
+  m_Center: {x: 0, y: 2.68, z: -3.02}
+--- !u!114 &973778155086546554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1104261034513556226}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fe25ab536dbe7f4d880e54d3e64a273, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2221402684545674225 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -7113867005161048670, guid: a04983cee43397a41857f56802383d33,

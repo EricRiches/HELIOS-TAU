@@ -60007,7 +60007,7 @@ GameObject:
   - component: {fileID: 1125974748}
   m_Layer: 6
   m_Name: Monster (AI)
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
