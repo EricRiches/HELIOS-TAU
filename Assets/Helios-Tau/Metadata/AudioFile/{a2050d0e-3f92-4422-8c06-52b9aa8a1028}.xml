@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{a2050d0e-3f92-4422-8c06-52b9aa8a1028}">
+		<property name="assetPath">
+			<value>MonsterRunBy.mp3</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>2.4239999999999999</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{d881eb7d-919b-4d35-93ba-6b376105ce0e}</destination>
+		</relationship>
+	</object>
+</objects>
