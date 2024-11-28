@@ -17,7 +17,7 @@ public class MonsterIsSeenChecker : MonoBehaviour
     [SerializeField] float FlashlightReplenishPower;
     [SerializeField] float FlashbangPowerUse;
     bool isInFlashlightRechargeState = false;
-    bool isFlashlightOn = true;
+    bool isFlashlightOn = false;
     Transform Monster;
     Camera cam;
     ScaryMonster monsterManager;
@@ -63,8 +63,10 @@ public class MonsterIsSeenChecker : MonoBehaviour
             CheckIsMonsgterInView_Shootpoint.LookAt(Monster.position);
 
             RaycastHit hit;
-            if (Physics.Raycast(CheckIsMonsgterInView_Shootpoint.position, CheckIsMonsgterInView_Shootpoint.forward, out hit, Mathf.Infinity, hitMask))
+            if (Physics.Raycast(CheckIsMonsgterInView_Shootpoint.position, CheckIsMonsgterInView_Shootpoint.forward, out hit, Mathf.Infinity, hitMask, QueryTriggerInteraction.Ignore))
             {
+                Debug.Log(hit.transform.name);
+
                 if (hit.transform != Monster)
                 {
                     isInCamera = false;
@@ -92,8 +94,8 @@ public class MonsterIsSeenChecker : MonoBehaviour
             if (CanFlashMonster && !isInFlashlightRechargeState)
             {
                 monsterManager.MonsterFlashed();
+                Debug.Log("Flashed Monster");
             }
-
             CurrentFlashlightPower -= FlashbangPowerUse;
         }
 
@@ -127,12 +129,20 @@ public class MonsterIsSeenChecker : MonoBehaviour
             else
             {
                 CurrentFlashlightPower = 100;
+            }
+
+            if (CurrentFlashlightPower < 0)
+            {
+                CurrentFlashlightPower = 0;
+            }
+
+                if (CurrentFlashlightPower > 50)
+            {
                 isInFlashlightRechargeState = false;
             }
 
 
-
-            if (Input.GetKeyDown(KeyCode.Mouse0))
+                if (Input.GetKeyDown(KeyCode.Mouse0))
             {
                 if (!isInFlashlightRechargeState)
                 {
