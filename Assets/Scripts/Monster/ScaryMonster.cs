@@ -77,6 +77,7 @@ public class ScaryMonster : MonoBehaviour
             if (!hasHuntStarted)
             {
                 SilentSneak_Start();
+                monsterAI.gameObject.SetActive(true);
                 hasHuntStarted = true;
             }
 
