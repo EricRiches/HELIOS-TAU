@@ -42,7 +42,7 @@ MonoBehaviour:
   Path: Assets/Helios-Tau/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638683032378661895
+  lastModified: 638684815453634805
   FileSizes:
   - Name: Desktop
     Value: 16608
@@ -125,12 +125,13 @@ MonoBehaviour:
   - {fileID: 5001097969651544103}
   - {fileID: 2409009068930650462}
   - {fileID: 7325882672879144019}
+  - {fileID: 1241855892707505816}
   EditorParameters: []
   MasterBanks:
   - {fileID: -6201709830409437028}
   StringsBanks:
   - {fileID: 146814214296214175}
-  cacheTime: 638683032378706955
+  cacheTime: 638684815472039688
   cacheVersion: 131620
 --- !u!114 &39175668668415013
 MonoBehaviour:
@@ -174,11 +175,38 @@ MonoBehaviour:
   Path: Assets/Helios-Tau/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638683032378671896
+  lastModified: 638684815453679907
   FileSizes:
   - Name: Desktop
-    Value: 1122
+    Value: 1162
   Exists: 1
+--- !u!114 &1241855892707505816
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/MenuMusic
+  m_EditorClassIdentifier: 
+  Path: event:/MenuMusic
+  Guid:
+    Data1: 519274424
+    Data2: 1239378747
+    Data3: -1806058353
+    Data4: -177294767
+  Banks:
+  - {fileID: 4365425052129172140}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 46210
 --- !u!114 &2409009068930650462
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -221,10 +249,10 @@ MonoBehaviour:
   Path: Assets/Helios-Tau/Build/Desktop/UnityScene.bank
   Name: UnityScene
   StudioPath: bank:/UnityScene
-  lastModified: 638683032378706955
+  lastModified: 638684815472039688
   FileSizes:
   - Name: Desktop
-    Value: 785056
+    Value: 1154016
   Exists: 1
 --- !u!114 &5001097969651544103
 MonoBehaviour:
