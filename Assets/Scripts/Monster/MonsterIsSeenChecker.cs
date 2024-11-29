@@ -91,12 +91,15 @@ public class MonsterIsSeenChecker : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Mouse1))
         {
-            if (CanFlashMonster && !isInFlashlightRechargeState)
+            if (!isInFlashlightRechargeState)
             {
-                monsterManager.MonsterFlashed();
-                Debug.Log("Flashed Monster");
+                if (CanFlashMonster)
+                {
+                    monsterManager.MonsterFlashed();
+                    Debug.Log("Flashed Monster");
+                }
+                CurrentFlashlightPower -= FlashbangPowerUse;
             }
-            CurrentFlashlightPower -= FlashbangPowerUse;
         }
 
 
