@@ -36,8 +36,6 @@ public class ScaryMonster : MonoBehaviour
     [Header("Silent Sneak")]
     [SerializeField] float SilentSneak_Speed;
 
-    bool hasHuntStarted = false;
-
     private void Start()
     {
         ChooseRandomChangeBehaviorTime();
@@ -74,13 +72,6 @@ public class ScaryMonster : MonoBehaviour
         }
         else
         {
-            if (!hasHuntStarted)
-            {
-                SilentSneak_Start();
-                monsterAI.gameObject.SetActive(true);
-                hasHuntStarted = true;
-            }
-
             SilentSneak_Update();
             MonsterAISounds.SetActive(true);
             //MonsterVoiceSource.clip = WalkingSound;
@@ -201,6 +192,7 @@ public class ScaryMonster : MonoBehaviour
     public void ActivateHunt()
     {
         SilentSneak_Start();
+        monsterAI.gameObject.SetActive(true);
         AreAllGeneratorsOn = true;
     }
 
