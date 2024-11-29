@@ -5,7 +5,7 @@
 			<value>DoorNoise</value>
 		</property>
 		<property name="outputFormat">
-			<value>1</value>
+			<value>2</value>
 		</property>
 		<relationship name="folder">
 			<destination>{cad3e6f1-0366-4eea-870a-aba3201b364b}</destination>
@@ -95,6 +95,7 @@
 		<relationship name="effects">
 			<destination>{7d37a106-e1b8-4719-b3eb-1b5508db2a9f}</destination>
 			<destination>{d73b783b-241f-4e0b-98e9-70f512b0c529}</destination>
+			<destination>{139a5cf8-7954-471d-b8fe-0e32a24c9f50}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{7feb5e5f-7fa0-48e6-b8ac-327823c2b77d}" />
@@ -105,6 +106,7 @@
 			<destination>{6c4725de-251b-4422-a629-808c446a420c}</destination>
 		</relationship>
 	</object>
+	<object class="SpatialiserEffect" id="{139a5cf8-7954-471d-b8fe-0e32a24c9f50}" />
 	<object class="RandomizerModulator" id="{6c4725de-251b-4422-a629-808c446a420c}">
 		<property name="nameOfPropertyBeingModulated">
 			<value>pitch</value>

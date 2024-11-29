@@ -1,5 +1,68 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &963634028030186377
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5367470802720539723}
+  - component: {fileID: 9034630746358207306}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5367470802720539723
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963634028030186377}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.7319824, y: 0.68, z: -3.1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 295213528980928952}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &9034630746358207306
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963634028030186377}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 2022944345
+      Data2: 1106477987
+      Data3: 1889047713
+      Data4: 616854768
+    Path: event:/DoorNoise
+  Event: 
+  EventPlayTrigger: 0
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1001 &257398277118451283
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -125,7 +188,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: a04983cee43397a41857f56802383d33,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5367470802720539723}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: a04983cee43397a41857f56802383d33,
         type: 3}
@@ -135,10 +202,6 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 973778155086546554}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: a04983cee43397a41857f56802383d33,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 5428007849857936885}
     - targetCorrespondingSourceObject: {fileID: 4271309310879736428, guid: a04983cee43397a41857f56802383d33,
         type: 3}
       insertIndex: -1
@@ -152,6 +215,12 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 516167203789816333}
   m_SourcePrefab: {fileID: 100100000, guid: a04983cee43397a41857f56802383d33, type: 3}
+--- !u!4 &295213528980928952 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: a04983cee43397a41857f56802383d33,
+    type: 3}
+  m_PrefabInstance: {fileID: 257398277118451283}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1104261034513556226 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: a04983cee43397a41857f56802383d33,
@@ -191,38 +260,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fe25ab536dbe7f4d880e54d3e64a273, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  emitter: {fileID: 5428007849857936885}
---- !u!114 &5428007849857936885
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1104261034513556226}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: 2022944345
-      Data2: 1106477987
-      Data3: 1889047713
-      Data4: 616854768
-    Path: event:/DoorNoise
-  Event: 
-  EventPlayTrigger: 0
-  EventStopTrigger: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  NonRigidbodyVelocity: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
+  emitter: {fileID: 9034630746358207306}
 --- !u!1 &2221402684545674225 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -7113867005161048670, guid: a04983cee43397a41857f56802383d33,

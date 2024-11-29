@@ -30139,7 +30139,11 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7628293077249595387, guid: b9cee7f857c37c449b2b4da6f016be07,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 740240101}
   m_SourcePrefab: {fileID: 100100000, guid: b9cee7f857c37c449b2b4da6f016be07, type: 3}
 --- !u!1001 &461103559
 PrefabInstance:
@@ -41504,6 +41508,43 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 738083971}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &740240097 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7628293077249595387, guid: b9cee7f857c37c449b2b4da6f016be07,
+    type: 3}
+  m_PrefabInstance: {fileID: 460798804}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &740240101
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 740240097}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -521401388
+      Data2: 1125612065
+      Data3: 2145447809
+      Data4: -579284601
+    Path: event:/AudioLog
+  Event: 
+  EventPlayTrigger: 1
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0.90000004
+  OverrideMaxDistance: 15
 --- !u!1 &746122371 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3455292422214010178, guid: 31ea28c5d290a2f458a89d8326b11351,
@@ -78162,7 +78203,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -186, y: -120}
+  m_AnchoredPosition: {x: -186, y: -128}
   m_SizeDelta: {x: 170.66663, y: 85.33331}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1382210250
@@ -101862,7 +101903,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -186, y: -120.00003}
+  m_AnchoredPosition: {x: -186, y: -128}
   m_SizeDelta: {x: 170.66663, y: 85.33331}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1835723604

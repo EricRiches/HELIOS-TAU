@@ -42,7 +42,7 @@ MonoBehaviour:
   Path: Assets/Helios-Tau/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638683032378661895
+  lastModified: 638684982262873600
   FileSizes:
   - Name: Desktop
     Value: 16608
@@ -127,12 +127,13 @@ MonoBehaviour:
   - {fileID: 7325882672879144019}
   - {fileID: 1241855892707505816}
   - {fileID: 3638683388210061578}
+  - {fileID: 1869162110856781232}
   EditorParameters: []
   MasterBanks:
   - {fileID: -6201709830409437028}
   StringsBanks:
   - {fileID: 146814214296214175}
-  cacheTime: 638684935259740812
+  cacheTime: 638684986252021668
   cacheVersion: 131620
 --- !u!114 &39175668668415013
 MonoBehaviour:
@@ -176,10 +177,10 @@ MonoBehaviour:
   Path: Assets/Helios-Tau/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638684935259690833
+  lastModified: 638684982262915632
   FileSizes:
   - Name: Desktop
-    Value: 1210
+    Value: 1260
   Exists: 1
 --- !u!114 &1241855892707505816
 MonoBehaviour:
@@ -208,6 +209,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 46210
+--- !u!114 &1869162110856781232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/AudioLog
+  m_EditorClassIdentifier: 
+  Path: event:/AudioLog
+  Guid:
+    Data1: -521401388
+    Data2: 1125612065
+    Data3: 2145447809
+    Data4: -579284601
+  Banks:
+  - {fileID: 4365425052129172140}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0.90000004
+  MaxDistance: 15
+  Length: 23993
 --- !u!114 &2409009068930650462
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -256,7 +284,7 @@ MonoBehaviour:
   Banks:
   - {fileID: 4365425052129172140}
   IsStream: 0
-  Is3D: 0
+  Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
@@ -277,10 +305,10 @@ MonoBehaviour:
   Path: Assets/Helios-Tau/Build/Desktop/UnityScene.bank
   Name: UnityScene
   StudioPath: bank:/UnityScene
-  lastModified: 638684935259740812
+  lastModified: 638684986252021668
   FileSizes:
   - Name: Desktop
-    Value: 1155008
+    Value: 1530720
   Exists: 1
 --- !u!114 &5001097969651544103
 MonoBehaviour:
