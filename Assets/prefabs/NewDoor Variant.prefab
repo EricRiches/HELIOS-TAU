@@ -135,6 +135,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 973778155086546554}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: a04983cee43397a41857f56802383d33,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5428007849857936885}
     - targetCorrespondingSourceObject: {fileID: 7953606483559150473, guid: a04983cee43397a41857f56802383d33,
         type: 3}
       insertIndex: -1
@@ -191,6 +195,38 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fe25ab536dbe7f4d880e54d3e64a273, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  emitter: {fileID: 5428007849857936885}
+--- !u!114 &5428007849857936885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1104261034513556226}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 2022944345
+      Data2: 1106477987
+      Data3: 1889047713
+      Data4: 616854768
+    Path: event:/DoorNoise
+  Event: 
+  EventPlayTrigger: 0
+  EventStopTrigger: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  NonRigidbodyVelocity: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &2221402684545674225 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -7113867005161048670, guid: a04983cee43397a41857f56802383d33,

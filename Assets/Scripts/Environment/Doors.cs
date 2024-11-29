@@ -5,6 +5,7 @@ using UnityEngine;
 public class Doors : MonoBehaviour
 {
     private Animator animator;
+    public FMODUnity.StudioEventEmitter emitter;
 
     private void Start()
     {
@@ -16,6 +17,7 @@ public class Doors : MonoBehaviour
         if (other.CompareTag("Monster") || other.CompareTag("Player"))
         {
             animator.SetTrigger("OPEN");
+            emitter.Play();
         }
     }
 
@@ -24,6 +26,7 @@ public class Doors : MonoBehaviour
         if (other.CompareTag("Monster") || other.CompareTag("Player"))
         {
             animator.SetTrigger("CLOSE");
+            emitter.Play();
         }
     }
 }

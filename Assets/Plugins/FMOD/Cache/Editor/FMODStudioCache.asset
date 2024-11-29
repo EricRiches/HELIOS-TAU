@@ -42,7 +42,7 @@ MonoBehaviour:
   Path: Assets/Helios-Tau/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638684815453634805
+  lastModified: 638684821432182667
   FileSizes:
   - Name: Desktop
     Value: 16608
@@ -126,12 +126,13 @@ MonoBehaviour:
   - {fileID: 2409009068930650462}
   - {fileID: 7325882672879144019}
   - {fileID: 1241855892707505816}
+  - {fileID: 3638683388210061578}
   EditorParameters: []
   MasterBanks:
   - {fileID: -6201709830409437028}
   StringsBanks:
   - {fileID: 146814214296214175}
-  cacheTime: 638684815472039688
+  cacheTime: 638684821435043123
   cacheVersion: 131620
 --- !u!114 &39175668668415013
 MonoBehaviour:
@@ -175,10 +176,10 @@ MonoBehaviour:
   Path: Assets/Helios-Tau/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638684815453679907
+  lastModified: 638684821432243456
   FileSizes:
   - Name: Desktop
-    Value: 1162
+    Value: 1210
   Exists: 1
 --- !u!114 &1241855892707505816
 MonoBehaviour:
@@ -234,6 +235,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 22000
+--- !u!114 &3638683388210061578
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/DoorNoise
+  m_EditorClassIdentifier: 
+  Path: event:/DoorNoise
+  Guid:
+    Data1: 2022944345
+    Data2: 1106477987
+    Data3: 1889047713
+    Data4: 616854768
+  Banks:
+  - {fileID: 4365425052129172140}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1104
 --- !u!114 &4365425052129172140
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -249,10 +277,10 @@ MonoBehaviour:
   Path: Assets/Helios-Tau/Build/Desktop/UnityScene.bank
   Name: UnityScene
   StudioPath: bank:/UnityScene
-  lastModified: 638684815472039688
+  lastModified: 638684821435043123
   FileSizes:
   - Name: Desktop
-    Value: 1154016
+    Value: 1155008
   Exists: 1
 --- !u!114 &5001097969651544103
 MonoBehaviour:
