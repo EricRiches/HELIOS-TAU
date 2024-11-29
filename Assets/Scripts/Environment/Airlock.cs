@@ -7,17 +7,20 @@ public class Airlock : MonoBehaviour
 {
     bool inAirlock = false;
 
-    GameObject lockSwitch;
+    CapsuleCollider lockSwitch;
+    CapsuleCollider lockSwitch2;
 
     // Start is called before the first frame update
     void Start()
     {
-        lockSwitch = transform.GetChild(0).gameObject;
+        lockSwitch = transform.GetChild(0).gameObject.GetComponentInChildren<CapsuleCollider>();
+        lockSwitch2 = transform.GetChild(1).gameObject.GetComponentInChildren<CapsuleCollider>();
     }
 
     public void SetEndGameTrue()
     {
-        lockSwitch.SetActive(true);
+        lockSwitch.enabled = true;
+        lockSwitch2.enabled = true;
     }
 
     private void OnTriggerStay(Collider other)

@@ -13,7 +13,7 @@ public class Player_Controls : MonoBehaviour
 
     CharacterController controller;
     Generator gen;
-    Airlock airlock;
+    [SerializeField] Airlock airlock;
 
     bool isUIOn = false;
     bool isDead = false;
@@ -65,8 +65,6 @@ public class Player_Controls : MonoBehaviour
 
         if (other.gameObject.CompareTag("Airlock"))
         {
-            airlock = other.transform.parent.gameObject.GetComponent<Airlock>();
-            
             whichKind = 1;
             AddRepairUI();
         }
