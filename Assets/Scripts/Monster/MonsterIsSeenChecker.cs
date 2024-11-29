@@ -65,7 +65,7 @@ public class MonsterIsSeenChecker : MonoBehaviour
             RaycastHit hit;
             if (Physics.Raycast(CheckIsMonsgterInView_Shootpoint.position, CheckIsMonsgterInView_Shootpoint.forward, out hit, Mathf.Infinity, hitMask, QueryTriggerInteraction.Ignore))
             {
-                Debug.Log(hit.transform.name);
+                //Debug.Log(hit.transform.name);
 
                 if (hit.transform != Monster)
                 {

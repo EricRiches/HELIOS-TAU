@@ -15,6 +15,9 @@ public class Lights : MonoBehaviour
 
     bool isOn = true;
 
+
+    bool isMonsterWithinArea = false;
+
     // Sets the default light intensity to the current intensity
     private void Start()
     {
@@ -24,16 +27,12 @@ public class Lights : MonoBehaviour
     }
 
     // If the monster is within range this starts the flickering
-    private void OnTriggerStay(Collider other)
+    private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Monster"))
         {
-            timer += Time.deltaTime;
-
-            if (timer > delay)
-            {
-                Flicker();
-            }
+            isMonsterWithinArea = true;
+        Debug.Log("Is Trigger Enter");
         }
     }
 
@@ -44,6 +43,7 @@ public class Lights : MonoBehaviour
         {
             isOn = true;
             lightSource.intensity = defaultIntensity;
+            isMonsterWithinArea = false;
         }
     }
 
@@ -64,5 +64,18 @@ public class Lights : MonoBehaviour
         }
 
         timer = 0;
+    }
+
+    private void Update()
+    {
+        if (isMonsterWithinArea)
+        {
+            timer += Time.deltaTime;
+
+            if (timer > delay)
+            {
+                Flicker();
+            }
+        }
     }
 }
