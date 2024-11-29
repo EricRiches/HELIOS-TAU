@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class Random_On : MonoBehaviour
 {
+    [SerializeField] ScaryMonster monster;
+    [SerializeField] Airlock airlock;
     [SerializeField] List<Generator> generators;
 
     int genOn;
@@ -33,8 +35,11 @@ public class Random_On : MonoBehaviour
             }
             if (genCount == generators.Count)
             {
-                SceneManager.LoadScene(1);
-                Cursor.lockState = CursorLockMode.None;
+                airlock.SetEndGameTrue();
+                monster.ActivateHunt();
+
+                //SceneManager.LoadScene(1);
+                //Cursor.lockState = CursorLockMode.None;
             }
         }
     }

@@ -13,12 +13,14 @@ public class Player_Controls : MonoBehaviour
 
     CharacterController controller;
     Generator gen;
+    Airlock airlock;
 
     bool isUIOn = false;
     bool isDead = false;
 
     float breakerSwitch = 3f;
     float timer = 0;
+    int whichKind; //To determine if its a generator or airlock switch
 
     private void Start()
     {
@@ -38,7 +40,7 @@ public class Player_Controls : MonoBehaviour
 
                 if (timer >= breakerSwitch)
                 {
-                    RepairGenerator();
+                    RepairGenerator(whichKind);
                 }
             }
             if (Input.GetKeyUp(KeyCode.E))
@@ -56,14 +58,23 @@ public class Player_Controls : MonoBehaviour
 
             if (gen != null && !gen.GetIsOn())
             {
+                whichKind = 0;
                 AddRepairUI();
             }
+        }
+
+        if (other.gameObject.CompareTag("Airlock"))
+        {
+            airlock = other.transform.parent.gameObject.GetComponent<Airlock>();
+            
+            whichKind = 1;
+            AddRepairUI();
         }
     }
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.gameObject.CompareTag("Generator"))
+        if (other.gameObject.CompareTag("Generator") || other.gameObject.CompareTag("Airlock"))
         {
             RemoveRepairUI();
         }
@@ -85,10 +96,20 @@ public class Player_Controls : MonoBehaviour
         canvas.SetActive(false);
     }
 
-    void RepairGenerator()
+    void RepairGenerator(int num)
     {
-        gen.TurnOnOff();
+        if (num == 0)
+        {
+            gen.TurnOnOff();
+        }
+        else if (num == 1)
+        {
+            airlock.TrySwitch();
+        }
+        else
+        {
 
+        }
         RemoveRepairUI();
     }
 
