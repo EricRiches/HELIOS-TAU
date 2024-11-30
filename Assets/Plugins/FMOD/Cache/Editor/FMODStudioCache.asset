@@ -19,7 +19,7 @@ MonoBehaviour:
     Data3: 1753206158
     Data4: 355599896
   Banks:
-  - {fileID: 4365425052129172140}
+  - {fileID: 7278065625270452060}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -27,7 +27,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1900
---- !u!114 &-6201709830409437028
+--- !u!114 &-6472769910299876094
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -37,15 +37,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
+  m_Name: bank:/Master.strings.bank
   m_EditorClassIdentifier: 
-  Path: Assets/Helios-Tau/Build/Desktop/Master.bank
-  Name: Master
-  StudioPath: bank:/Master
-  lastModified: 638684982262873600
+  Path: FMOD/Helios-Tau/Build/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 638684982262915632
   FileSizes:
   - Name: Desktop
-    Value: 16608
+    Value: 1260
   Exists: 1
 --- !u!114 &-5863036973587435432
 MonoBehaviour:
@@ -66,7 +66,7 @@ MonoBehaviour:
     Data3: -1963182932
     Data4: 823346786
   Banks:
-  - {fileID: 4365425052129172140}
+  - {fileID: 7278065625270452060}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -93,7 +93,7 @@ MonoBehaviour:
     Data3: 1550280856
     Data4: 168496716
   Banks:
-  - {fileID: 4365425052129172140}
+  - {fileID: 7278065625270452060}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -114,9 +114,9 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: 146814214296214175}
-  - {fileID: -6201709830409437028}
-  - {fileID: 4365425052129172140}
+  - {fileID: -6472769910299876094}
+  - {fileID: 8988658986684269769}
+  - {fileID: 7278065625270452060}
   EditorEvents:
   - {fileID: 39175668668415013}
   - {fileID: -1678735219277660303}
@@ -130,10 +130,10 @@ MonoBehaviour:
   - {fileID: 1869162110856781232}
   EditorParameters: []
   MasterBanks:
-  - {fileID: -6201709830409437028}
+  - {fileID: 8988658986684269769}
   StringsBanks:
-  - {fileID: 146814214296214175}
-  cacheTime: 638684986252021668
+  - {fileID: -6472769910299876094}
+  cacheTime: 638685849874815500
   cacheVersion: 131620
 --- !u!114 &39175668668415013
 MonoBehaviour:
@@ -154,7 +154,7 @@ MonoBehaviour:
     Data3: -358571330
     Data4: -227182009
   Banks:
-  - {fileID: 4365425052129172140}
+  - {fileID: 7278065625270452060}
   IsStream: 0
   Is3D: 1
   IsOneShot: 0
@@ -162,26 +162,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 7500
---- !u!114 &146814214296214175
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.strings.bank
-  m_EditorClassIdentifier: 
-  Path: Assets/Helios-Tau/Build/Desktop/Master.strings.bank
-  Name: Master.strings
-  StudioPath: bank:/Master.strings
-  lastModified: 638684982262915632
-  FileSizes:
-  - Name: Desktop
-    Value: 1260
-  Exists: 1
 --- !u!114 &1241855892707505816
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -201,7 +181,7 @@ MonoBehaviour:
     Data3: -1806058353
     Data4: -177294767
   Banks:
-  - {fileID: 4365425052129172140}
+  - {fileID: 7278065625270452060}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -228,13 +208,13 @@ MonoBehaviour:
     Data3: 2145447809
     Data4: -579284601
   Banks:
-  - {fileID: 4365425052129172140}
+  - {fileID: 7278065625270452060}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
   Parameters: []
   MinDistance: 0.90000004
-  MaxDistance: 15
+  MaxDistance: 40
   Length: 23993
 --- !u!114 &2409009068930650462
 MonoBehaviour:
@@ -255,7 +235,7 @@ MonoBehaviour:
     Data3: -108168269
     Data4: 2043356419
   Banks:
-  - {fileID: 4365425052129172140}
+  - {fileID: 7278065625270452060}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
@@ -282,7 +262,7 @@ MonoBehaviour:
     Data3: 1889047713
     Data4: 616854768
   Banks:
-  - {fileID: 4365425052129172140}
+  - {fileID: 7278065625270452060}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -290,26 +270,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1364
---- !u!114 &4365425052129172140
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/UnityScene.bank
-  m_EditorClassIdentifier: 
-  Path: Assets/Helios-Tau/Build/Desktop/UnityScene.bank
-  Name: UnityScene
-  StudioPath: bank:/UnityScene
-  lastModified: 638684986252021668
-  FileSizes:
-  - Name: Desktop
-    Value: 1530720
-  Exists: 1
 --- !u!114 &5001097969651544103
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -329,7 +289,7 @@ MonoBehaviour:
     Data3: -45395285
     Data4: 1755123542
   Banks:
-  - {fileID: 4365425052129172140}
+  - {fileID: 7278065625270452060}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
@@ -337,6 +297,26 @@ MonoBehaviour:
   MinDistance: 0.1
   MaxDistance: 150
   Length: 13000
+--- !u!114 &7278065625270452060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/UnityScene.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/Helios-Tau/Build/Desktop/UnityScene.bank
+  Name: UnityScene
+  StudioPath: bank:/UnityScene
+  lastModified: 638685849874815500
+  FileSizes:
+  - Name: Desktop
+    Value: 1530912
+  Exists: 1
 --- !u!114 &7325882672879144019
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -356,8 +336,8 @@ MonoBehaviour:
     Data3: 814011012
     Data4: -487453772
   Banks:
-  - {fileID: -6201709830409437028}
-  - {fileID: 4365425052129172140}
+  - {fileID: 8988658986684269769}
+  - {fileID: 7278065625270452060}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -365,3 +345,23 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1404
+--- !u!114 &8988658986684269769
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/Helios-Tau/Build/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 638684982262873600
+  FileSizes:
+  - Name: Desktop
+    Value: 16608
+  Exists: 1

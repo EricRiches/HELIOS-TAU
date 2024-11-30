@@ -463,8 +463,8 @@ MonoBehaviour:
   switchSettingsMigration: 1
   HasSourceProject: 1
   HasPlatforms: 1
-  sourceProjectPath: Assets/Helios-Tau/Helios-Tau.fspro
-  sourceBankPath: Assets/Helios-Tau/Build
+  sourceProjectPath: FMOD/Helios-Tau/Helios-Tau.fspro
+  sourceBankPath: FMOD/Helios-Tau/Build
   sourceBankPathUnformatted: 
   BankRefreshCooldown: 5
   ShowBankRefreshWindow: 1
@@ -573,8 +573,9 @@ MonoBehaviour:
       Value: 0
       HasValue: 0
     Plugins:
-      Value: []
-      HasValue: 0
+      Value:
+      - phonon_fmod
+      HasValue: 1
     StaticPlugins:
       Value: []
       HasValue: 0
