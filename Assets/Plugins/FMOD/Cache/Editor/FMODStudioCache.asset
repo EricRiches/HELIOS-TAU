@@ -133,7 +133,7 @@ MonoBehaviour:
   - {fileID: 8988658986684269769}
   StringsBanks:
   - {fileID: -6472769910299876094}
-  cacheTime: 638685849874815500
+  cacheTime: 638686096853251389
   cacheVersion: 131620
 --- !u!114 &39175668668415013
 MonoBehaviour:
@@ -312,10 +312,10 @@ MonoBehaviour:
   Path: FMOD/Helios-Tau/Build/Desktop/UnityScene.bank
   Name: UnityScene
   StudioPath: bank:/UnityScene
-  lastModified: 638685849874815500
+  lastModified: 638686096853251389
   FileSizes:
   - Name: Desktop
-    Value: 1530912
+    Value: 1530304
   Exists: 1
 --- !u!114 &7325882672879144019
 MonoBehaviour:
