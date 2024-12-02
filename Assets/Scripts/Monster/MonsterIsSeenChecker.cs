@@ -31,6 +31,9 @@ public class MonsterIsSeenChecker : MonoBehaviour
     [SerializeField] Color ExhaustFlashlightPower = Color.white;
     [SerializeField] Color FlashlightOnColor = Color.green;
     [SerializeField] Color FlashlightOffColor = Color.white;
+    
+    public FMODUnity.StudioEventEmitter onEmitter;
+    public FMODUnity.StudioEventEmitter offEmitter;
 
     private void Start()
     {
@@ -106,6 +109,7 @@ public class MonsterIsSeenChecker : MonoBehaviour
         if (CurrentFlashlightPower <= 0)
         {
             isFlashlightOn = false;
+            offEmitter.Play();
             isInFlashlightRechargeState = true;
         }
 
@@ -119,6 +123,7 @@ public class MonsterIsSeenChecker : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Mouse0))
             {
                 isFlashlightOn = false;
+                offEmitter.Play();
             }
         }
         else
@@ -150,6 +155,7 @@ public class MonsterIsSeenChecker : MonoBehaviour
                 if (!isInFlashlightRechargeState)
                 {
                     isFlashlightOn = true;
+                    onEmitter.Play();
                 }
             }
         }
